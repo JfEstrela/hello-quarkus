@@ -22,7 +22,7 @@ public class GreetingResourceTest {
 
 	@Test
 	public void testHelloEndpoint() {
-		given().when().get("/"+HELLO).then().statusCode(200).body(is(HELLO+"\n"));
+		given().when().get("/"+HELLO).then().statusCode(200).body(is(HELLO));
 	}
 
 	@Test
