@@ -27,7 +27,7 @@ public class GreetingResourceTest {
 
 	@Test
 	public void testGreetingIamEndpoint() {
-		given().pathParam(name, name)
+		given().pathParam(NAME, name)
 		       .when().get("/"+HELLO+"/"+GREETING+"/")
 		       .then().statusCode(200)
 			   .body(is(HELLO+" " + name + "\n"));
